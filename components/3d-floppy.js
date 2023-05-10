@@ -33,7 +33,7 @@ const Floppy = () => {
           
               renderer.setSize(scW, scH);
             }
-          }, [renderer]);
+          }, []);
         
         /* eslint-disable react-hooks/exhaustive-deps */
         useEffect(() => {
