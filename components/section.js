@@ -18,4 +18,4 @@ const Section = ({ children, delay=0 }) => (
         </StyledDiv>
 )
 
-export default Section
+export default Section 

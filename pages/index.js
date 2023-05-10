@@ -81,9 +81,9 @@ Amir excels in driving growth, fostering collaboration, and managing cross-funct
             <Heading as="h3" variant="section-title">
                 I am into  
                 </Heading>
-            <Paragraph>
+            <span>
                 Art, Design, Technology, Music, and Culture. Making music, building things, and learning new things.
-                </Paragraph>
+                </span>
             </Section>
         </Container>
         </Layout>

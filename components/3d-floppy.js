@@ -24,15 +24,16 @@ const Floppy = () => {
         const [ scene ] = useState(new THREE.Scene())
         const [ _controls, setControls ] = useState()
 
+        // eslint-disable-next-line no-unused-vars
         const handleWindowResize = useCallback(() => {
-        const { current: container } = refContainer
-        if (container && renderer) {
-            const scW = container.clientWidth
-            const scH = container.clientHeight
-
-            renderer.setSize(scW, scH)
+            const { current: container } = refContainer;
+            if (container && renderer) {
+              const scW = container.clientWidth;
+              const scH = container.clientHeight;
+          
+              renderer.setSize(scW, scH);
             }
-        }, [])
+          }, [renderer]);
         
         /* eslint-disable react-hooks/exhaustive-deps */
         useEffect(() => {
@@ -101,7 +102,7 @@ const Floppy = () => {
                         } else {
                             controls.update()
                         }
-
+                    renderer.render(scene, camera)
                     }
 
                     return () => {

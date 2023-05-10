@@ -9,4 +9,4 @@ text-indent: -1.5 em;
 export const BioYear = styled.span`
 font-weight: bold;
 margin-right: 1em;
-`
+` 
