@@ -10,6 +10,7 @@ function easeOutCirc(x) {
 
 const Floppy = () => {
     const refContainer = useRef()
+
     const [loading, setLoading] = useState(true)
     const [renderer, setRenderer] = useState()
     const [ _camera, setCamera ] = useState()
@@ -33,7 +34,7 @@ const Floppy = () => {
           
               renderer.setSize(scW, scH);
             }
-          }, []);
+          }, [renderer]);
         
         /* eslint-disable react-hooks/exhaustive-deps */
         useEffect(() => {
@@ -96,8 +97,10 @@ const Floppy = () => {
                             const rotSpeed = -easeOutCirc(frame / 120) * Math.PI * 2
 
                             camera.position.y = 10
-                            camera.position.x = p.x * Math.cos(rotSpeed) + p.z * Math.sin(rotSpeed)
-                            camera.position.z = p.z * Math.sin(rotSpeed) - p.x * Math.cos(rotSpeed)
+                            camera.position.x = 
+                            p.x * Math.cos(rotSpeed) + p.z * Math.sin(rotSpeed)
+                            camera.position.z = 
+                            p.z * Math.sin(rotSpeed) - p.x * Math.cos(rotSpeed)
                             camera.lookAt(target)
                         } else {
                             controls.update()
@@ -112,6 +115,13 @@ const Floppy = () => {
             
                 }
             }, [])
+
+            useEffect(() => {
+                window.addEventListener('resize', handleWindowResize, false)
+                return() => { 
+                    window.removeEventListener('resize', handleWindowResize, false)
+                }
+            }, [renderer, handleWindowResize])
 
     return (
         <Box 
