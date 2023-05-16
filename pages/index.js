@@ -67,17 +67,8 @@ Amir excels in driving growth, fostering collaboration, and managing cross-funct
             </NextLink>
             </Box>
      </Section>
-
+     
         <Section delay={0.2}>
-            <Heading as="h3" variant="section-title">
-                Bio 
-                </Heading>
-            <BioSecton> 
-                <BioYear>1990</BioYear>
-                Born in Dayton, Ohio.
-                </BioSecton>
-            </Section>
-        <Section delay={0.3}>
             <Heading as="h3" variant="section-title">
                 I am into  
                 </Heading>
