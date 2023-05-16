@@ -70,6 +70,13 @@ Amir excels in driving growth, fostering collaboration, and managing cross-funct
             </Button> 
             </NextLink>
             </Box>
+            <Box align="center" my={4}>
+            <NextLink href="https://drive.google.com/file/d/1ebdCasFlLlUc8kLFpIOZ52ccf6spho65/view?usp=sharing">
+        <Button rightIcon={<ChevronRightIcon />} colorScheme="teal" variant="outline">
+            My Resume 
+            </Button> 
+            </NextLink>
+            </Box>
      </Section>
 
         <Section delay={0.2}>
@@ -108,7 +115,7 @@ Amir excels in driving growth, fostering collaboration, and managing cross-funct
                              </Link>
                     </ListItem>
                     <ListItem>
-                        <Link href="chromuh@protonmai.com" target="_blank">
+                        <Link href="chromuh@protonmail.com" target="_blank">
                             <Button variant="ghost" colorScheme='teal' leftIcon={<Icon as ={IoAtSharp} />}>
                                Email
                             </Button>
