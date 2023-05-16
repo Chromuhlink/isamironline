@@ -30,7 +30,7 @@ const Page = () => {
                 <Heading as="h2" variant="page-title">
                     Amir Gamble
                     </Heading>
-                    <Paragraph>Digital Creative (Builder / Developer / Designer)</Paragraph>
+                    <Paragraph>Digital Creative / Developer / Builder </Paragraph>
                 </Box> 
                 <Box 
                 flexShrink={0} 

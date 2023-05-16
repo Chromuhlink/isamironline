@@ -18,7 +18,7 @@ const Works = () => {
                         </WorkGridItem>
                     </Section>
                     <Section>
-                        <WorkGridItem id="hypercatridge" title="Hypercartidge" thumbnail={hypercartridge}>
+                        <WorkGridItem id="hypercartridge" title="Hypercartidge" thumbnail={hypercartridge}>
                         Mintable Collaborative Application Cartridges, which allow a single or multiplayer app to be minted to an NFT, and served as a static site or via ENS.
                             </WorkGridItem>
                     </Section>

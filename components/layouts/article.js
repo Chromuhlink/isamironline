@@ -17,7 +17,7 @@ const Layout = ({ children, title }) => (
     transition={{ duration: 0.4, type: 'easeInOut' }} style={{ position: 'relative' }}>
         <>
         {title && ( <Head>
-            <title>{title} | Amir Gamble</title>
+            {title} | Amir Gamble
             </Head>
             )}
             {children}

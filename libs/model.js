@@ -22,11 +22,11 @@ export function loadGLTF(
         obj.castShadow = castShadow;
         scene.add(obj)
 
-        obj.traverse(function (child) {
-          if (child.isMesh) {
-            child.castShadow = castShadow
-            child.receiveShadow = receiveShadow
-          }
+            obj.traverse(function (child) {
+              if (child.isMesh) {
+                child.castShadow = castShadow
+                child.receiveShadow = receiveShadow
+              }
         });
 
         resolve(obj)
