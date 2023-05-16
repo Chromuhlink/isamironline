@@ -81,10 +81,10 @@ Amir excels in driving growth, fostering collaboration, and managing cross-funct
 
         <Section delay={0.2}>
             <Heading as="h3" variant="section-title">
-                I am into  
+                I Like 
                 </Heading>
             <span>
-                Art, Design, Technology, Music, and Culture. Making music, building things, and learning new things.
+                Everything Digital, Art, Design, New Technology, Music, and Culture.
                 </span>
             </Section>
 
