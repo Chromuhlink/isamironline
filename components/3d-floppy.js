@@ -85,7 +85,6 @@ const Floppy = () => {
                     setLoading(false)
                     })
 
-                    // eslint-disable-next-line no-unused-vars
                     let req = null
                     let frame = 0
                     const animate = () => {
@@ -109,11 +108,20 @@ const Floppy = () => {
                     renderer.render(scene, camera)
                     }
 
-    
-                    
+                    return () => {
+                        cancelAnimationFrame(req)
+                        renderer.dispose()
+                    }
+            
                 }
             }, [])
 
+            useEffect(() => {
+                window.addEventListener('resize', handleWindowResize, false)
+                return() => { 
+                    window.removeEventListener('resize', handleWindowResize, false)
+                }
+            }, [renderer, handleWindowResize])
 
     return (
         <Box 
