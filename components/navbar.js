@@ -69,11 +69,8 @@ const Navbar = (props) => {
           flexGrow={1}
           mt={{ base: 4, md: 0 }}
         >
-          <LinkItem href="/works" path={path}>
-            Works
-          </LinkItem>
-          <LinkItem href="/posts" path={path}>
-            Posts
+          <LinkItem href="/work" path={path}>
+            Work
           </LinkItem>
         </Stack>
 
@@ -87,10 +84,7 @@ const Navbar = (props) => {
                     <MenuItem>About</MenuItem>
                   </NextLink>
                   <NextLink href="/works" passHref>
-                    <MenuItem>Works</MenuItem>
-                  </NextLink>
-                  <NextLink href="/posts" passHref>
-                    <MenuItem>Posts</MenuItem>
+                    <MenuItem>Work</MenuItem>
                   </NextLink>
                   <NextLink href="https://github.com/chromuhlink" passHref>
                     <MenuItem>Source</MenuItem>

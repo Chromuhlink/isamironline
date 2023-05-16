@@ -1,11 +1,15 @@
 import NextLink from 'next/link'
-import { Container, Box, Heading, Image, Link, useColorModeValue, Button } from '@chakra-ui/react'
+import { Container, Box, Heading, Image, Link, useColorModeValue, Button, List, ListItem, Icon } from '@chakra-ui/react'
 import { ChevronRightIcon } from '@chakra-ui/icons' 
 import Layout from '@/components/layouts/article'
 import Section from '../components/section'
 import Paragraph from '@/components/paragraph'
-import { BioSecton, BioYear } from '@/components/bio'
-
+import { 
+    IoLogoTwitter,
+    IoLogoGithub,
+    IoLogoLinkedin,
+    IoAtSharp
+} from 'react-icons/io5'
 
 const Page = () => {
     return (
@@ -67,7 +71,7 @@ Amir excels in driving growth, fostering collaboration, and managing cross-funct
             </NextLink>
             </Box>
      </Section>
-     
+
         <Section delay={0.2}>
             <Heading as="h3" variant="section-title">
                 I am into  
@@ -76,6 +80,42 @@ Amir excels in driving growth, fostering collaboration, and managing cross-funct
                 Art, Design, Technology, Music, and Culture. Making music, building things, and learning new things.
                 </span>
             </Section>
+
+            <Section delay={0.3}>
+               <Heading as="h3" variant="section-title">
+                On the web
+                </Heading>
+                <List>
+                    <ListItem>
+                        <Link href="https://github.com/chromuhlink" target="_blank">
+                            <Button variant="ghost" colorScheme='teal' leftIcon={<Icon as ={IoLogoGithub} />}>
+                                @chromuhlink
+                            </Button>
+                        </Link>
+                    </ListItem>
+                    <ListItem>
+                        <Link href="https://twitter.com/0xchromuh" target="_blank">
+                            <Button variant="ghost" colorScheme='teal' leftIcon={<Icon as ={IoLogoTwitter} />}>
+                                @0xchromuh
+                            </Button>
+                        </Link>
+                    </ListItem>
+                    <ListItem>
+                        <Link href="https://www.linkedin.com/in/amir-gamble-57083333/" target="_blank">
+                            <Button variant="ghost" colorScheme='teal' leftIcon={<Icon as ={IoLogoLinkedin} />}>
+                                @AmirGamble 
+                            </Button>
+                             </Link>
+                    </ListItem>
+                    <ListItem>
+                        <Link href="chromuh@protonmai.com" target="_blank">
+                            <Button variant="ghost" colorScheme='teal' leftIcon={<Icon as ={IoAtSharp} />}>
+                               Email
+                            </Button>
+                             </Link>
+                    </ListItem>
+                </List>
+                </Section>
         </Container>
         </Layout>
     )

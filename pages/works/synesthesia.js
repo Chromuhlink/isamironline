@@ -1,4 +1,4 @@
-import { Container, Badge, List, ListItem, Stack } from '@chakra-ui/react';
+import { Container, Badge, List, ListItem } from '@chakra-ui/react';
 import Link from 'next/link';
 import { ExternalLinkIcon } from '@chakra-ui/icons';
 import { Title, WorkImage, Meta } from '../../components/work';
@@ -12,7 +12,7 @@ const Work = () => {
                 <Title>Synesthesia <Badge>2022</Badge>
                     </Title>
                     <P>
-                    Synesthesia is an innovative platform that transforms your music fandom into unique NFTs. Taking cues from your Music NFT collection and holding duration, it generates a distinctive piece of art that encapsulates your musical journey. Essentially, it's an on-chain Spotify Wrapped, turning your yearly music activity into a one-of-a-kind, verifiable artwork, offering a new, immersive way to engage with the Music NFT community.
+                    Synesthesia is an innovative platform that transforms your music fandom into unique NFTs. Taking cues from your Music NFT collection and holding duration, it generates a distinctive piece of art that encapsulates your musical journey. Essentially, it is an on-chain Spotify Wrapped, turning your yearly music activity into a one-of-a-kind, verifiable artwork, offering a new, immersive way to engage with the Music NFT community.
                     </P>
                     <List ml={4} my={4}>
                         <ListItem>
@@ -31,6 +31,7 @@ const Work = () => {
                             </ListItem>
                     </List>
                     <WorkImage src="/images/work/synesthesia.png" alt="Synesthesia" />
+                    <WorkImage src="/images/work/synesthesia2.png" alt="Synesthesia" />
             </Container>
         </Layout>
     )
