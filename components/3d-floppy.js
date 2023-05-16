@@ -144,7 +144,6 @@ const Floppy = () => {
                 mt="calc(0px - var(--spinner-size))"  
                 />
                 )}
-            Floppy
             </Box>
     )
 }

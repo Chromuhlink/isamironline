@@ -15,6 +15,7 @@ export function loadGLTF(
         console.log("Model loaded successfully:", gltf);
 
         const obj = gltf.scene;
+        obj.name = 'floppy'
         obj.position.y = 0
         obj.position.x = 0
         obj.receiveShadow = receiveShadow;
