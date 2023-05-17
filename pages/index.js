@@ -115,7 +115,7 @@ Amir excels in driving growth, fostering collaboration, and managing cross-funct
                              </Link>
                     </ListItem>
                     <ListItem>
-                        <Link href="chromuh@protonmail.com" target="_blank">
+                        <Link href="mailto:chromuh@protonmail.com" target="_blank">
                             <Button variant="ghost" colorScheme='teal' leftIcon={<Icon as ={IoAtSharp} />}>
                                Email
                             </Button>
